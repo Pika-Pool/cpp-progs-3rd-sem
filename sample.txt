@@ -1,3 +1,1 @@
-You can quickly review the changes made to a file using the diff command:
-
-git diff <commit hash> <filename>
+A number is a mathematical object used to count, measure, and label. The original examples are the natural numbers 1, 2, 3, 4, and so forth. Numbers can be represented in language with number words.
