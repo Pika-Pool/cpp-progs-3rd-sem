@@ -1,7 +1,3 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Nesciunt molestias quisquam odit optio, illum tenetur earum!
-Sequi dignissimos suscipit at alias libero in illum.
-Asperiores dicta similique consequatur reprehenderit fuga, laborum dolore?
-Aut adipisci ex, tenetur autem voluptates aliquid at.
-Nesciunt aliquam labore a officia non voluptatum libero?
-Deleniti illo cupiditate placeat id natus numquam aliquid!
+You can quickly review the changes made to a file using the diff command:
+
+git diff <commit hash> <filename>
