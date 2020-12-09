@@ -10,13 +10,11 @@ int main()
 	char str[stringMaxSize];
 	cout << "Enter your string:\t";
 	cin.getline(str, 256, '\n');
-	cin.ignore();
 
 	// getting filename from user
 	char filename[FILENAME_MAX];
 	cout << "Enter name of file:\t";
 	cin.getline(filename, FILENAME_MAX, '\n');
-	cin.ignore();
 
 	// fstream object to work with files
 	fstream file;
