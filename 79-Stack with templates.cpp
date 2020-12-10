@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Stack class that can store data of any type
 template <typename T>
 class Stack
 {
@@ -80,6 +81,7 @@ int main()
 	cin >> size;
 
 	// initialize stack size as entered by user
+	// storing data of type int
 	Stack<int> s(size);
 
 	do
