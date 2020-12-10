@@ -2,10 +2,12 @@
 #include <stdexcept>
 using namespace std;
 
+// returns result of num divided by den
 double divide(double num, double den)
 {
 	if (den == 0)
 	{
+		// numbers can't be divided by 0
 		throw runtime_error("Math error: Cannot divide by 0!!");
 	}
 
@@ -24,6 +26,7 @@ int main()
 
 	cout << "\n\n";
 
+	// handle any exception thrown on calling divide
 	try
 	{
 		res = divide(num, den);
