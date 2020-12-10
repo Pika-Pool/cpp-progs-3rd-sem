@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// function that throws error
 void func()
 {
 	try
@@ -11,7 +12,7 @@ void func()
 	catch (int e)
 	{
 		cout << "Caught integer exception inside func()\nRethrowing...\n";
-		throw;
+		throw; // rethrow the error thrown in try block
 	}
 }
 
@@ -22,7 +23,7 @@ int main()
 		cout << "Inside main() try block\n\n";
 		func();
 	}
-	catch (int e)
+	catch (int e) // catch any integer errors thrown
 	{
 		cout << "\nCaught integer exception in main()\n";
 	}
