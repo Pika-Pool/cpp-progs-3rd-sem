@@ -2,6 +2,7 @@
 #include <limits>
 using namespace std;
 
+// input array of generic type from user
 template <typename T>
 void input(T *arr, const int n)
 {
@@ -11,6 +12,7 @@ void input(T *arr, const int n)
 	}
 }
 
+// print sum, min, max of array
 template <typename T>
 void sum_min_max(T *arr, const int n)
 {
@@ -33,6 +35,7 @@ void sum_min_max(T *arr, const int n)
 	cout << "\nMax:\t" << max;
 }
 
+// print array of any type
 template <typename T>
 void printArray(T *arr, const int n)
 {
@@ -46,6 +49,7 @@ void printArray(T *arr, const int n)
 
 int main()
 {
+	// INTEGER ARRAY
 	const int length = 10;
 	int arri[length];
 	cout << "Enter an integer array of length: " << length << "\n";
@@ -56,8 +60,9 @@ int main()
 
 	cout << "\n\n";
 
+	// FLOAT ARRAY
 	float arrf[length];
-	cout << "Enter an floating point array of length: " << length;
+	cout << "Enter an floating point array of length: " << length << "\n";
 	input(arrf, length);
 	cout << "\n\n";
 	printArray(arrf, length);
