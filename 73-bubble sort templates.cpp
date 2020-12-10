@@ -4,6 +4,7 @@
 #include <windows.h>
 using namespace std;
 
+// swap references of any type
 template <typename T>
 void swapVals(T &a, T &b)
 {
@@ -12,6 +13,7 @@ void swapVals(T &a, T &b)
 	a = temp;
 }
 
+// print array storing any type of data
 template <typename T>
 void printArray(T *arr, const int n, const int green = -1)
 {
@@ -38,6 +40,7 @@ void printArray(T *arr, const int n, const int green = -1)
 	cout << "\n";
 }
 
+// bubble sort array storing comparable type of data
 template <typename T>
 void bubbleSort(T *arr, const int n)
 {
@@ -59,6 +62,7 @@ int main()
 	int arri[length];
 	float arrf[length];
 
+	// randomly generate array value
 	srand(time(0));
 	for (int i = 0; i < length; ++i)
 	{
@@ -68,6 +72,7 @@ int main()
 		arrf[i] = 10 + (float)rand() / (float)(RAND_MAX / 90);
 	}
 
+	// INT ARRAY
 	cout << "Integer Array:\n";
 	printArray(arri, length);
 	cout << "\nSorting Array:\n";
@@ -75,6 +80,7 @@ int main()
 
 	cout << "\n\n";
 
+	// FLOAT ARRAY
 	cout << "Float Array:\n";
 	printArray(arrf, length);
 	cout << "\nSorting Array:\n";
