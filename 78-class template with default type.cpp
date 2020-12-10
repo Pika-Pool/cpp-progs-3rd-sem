@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// template with default type
 template <typename T = double>
 class Calculator
 {
@@ -35,9 +36,11 @@ public:
 
 int main()
 {
+	// DOUBLE
 	double op1, op2;
 	cout << "Enter operands(double):\t";
 	cin >> op1 >> op2;
+	// using default explicit type = double
 	Calculator calc1(op1, op2);
 
 	cout << "\n";
@@ -48,9 +51,11 @@ int main()
 
 	cout << "\n\n";
 
+	// INT
 	int op3, op4;
 	cout << "Enter operands(int):\t";
 	cin >> op3 >> op4;
+	// using implicit type
 	Calculator<int> calc2(op3, op4);
 
 	cout << "\n";
