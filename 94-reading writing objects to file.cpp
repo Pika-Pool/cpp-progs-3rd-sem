@@ -3,6 +3,7 @@
 #include <fstream>
 using namespace std;
 
+// student class
 class Student
 {
 	char name[50];
@@ -39,8 +40,11 @@ public:
 int main()
 {
 	char filename[] = "studentDetails.dat";
+	// open binary file in output/write mode
 	fstream file(filename, ios::binary | ios::out);
 
+	// get student details and
+	// write to files as binary data
 	Student arr[3];
 	for (int i = 0; i < 3; ++i)
 	{
@@ -54,8 +58,10 @@ int main()
 
 	cout << "\n\n";
 
+	// open binary file in input/read mode
 	file.open(filename, ios::binary | ios::in);
 
+	// read each student data stored and print to console
 	Student obj;
 	for (int i = 0; i < 3; ++i)
 	{
