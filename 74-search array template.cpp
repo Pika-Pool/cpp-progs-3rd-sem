@@ -4,6 +4,7 @@
 #include <cmath>
 using namespace std;
 
+// find element in array and return its index
 template <typename T>
 int findIndex(T *arr, const int n, T el)
 {
@@ -14,6 +15,7 @@ int findIndex(T *arr, const int n, T el)
 	return -1;
 }
 
+// print an array of size n
 template <typename T>
 void printArray(T *arr, const int n)
 {
@@ -32,6 +34,7 @@ int main()
 	int arri[length], eli;
 	float arrf[length], elf;
 
+	// generate random array elemens
 	srand(time(0));
 	for (int i = 0; i < length; ++i)
 	{
@@ -42,6 +45,7 @@ int main()
 		arrf[i] = round(arrf[i] * 100) / 100;
 	}
 
+	// INT ARRAY
 	cout << "Integer Array:\n";
 	printArray(arri, length);
 	cout << "\nEnter an element to find in array:\t";
@@ -50,6 +54,7 @@ int main()
 
 	cout << "\n\n";
 
+	// FLOAT ARRAY
 	cout << "Float Array:\n";
 	printArray(arrf, length);
 	cout << "\nEnter an element to find in array:\t";
